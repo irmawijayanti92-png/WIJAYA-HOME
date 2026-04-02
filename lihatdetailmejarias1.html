@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk | Meja Rias</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#111;
+      --secondary:#666;
+      --accent:#a36b16;
+      --bg:#f4f4f4;
+      --white:#fff;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--primary);
+    }
+
+    /* ===== NAVBAR ===== */
+    header{
+      background:var(--white);
+      box-shadow:0 4px 20px rgba(0,0,0,.08);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    .nav{
+      max-width:1200px;
+      margin:auto;
+      padding:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo a{
+      text-decoration:none;
+      color:inherit;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    .logo span{
+      color:var(--accent);
+    }
+
+    .menu a{
+      margin-left:25px;
+      text-decoration:none;
+      color:var(--primary);
+      font-weight:500;
+      transition:.3s;
+    }
+
+    .menu a:hover{
+      color:var(--accent);
+    }
+
+    /* ===== DETAIL PRODUK ===== */
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .product-box{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      background:var(--white);
+      border-radius:22px;
+      padding:40px;
+      box-shadow:0 25px 60px rgba(0,0,0,.08);
+    }
+
+    .product-img img{
+      width:100%;
+      border-radius:18px;
+      object-fit:cover;
+    }
+
+    .product-info h1{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    .price{
+      font-size:26px;
+      font-weight:600;
+      color:var(--accent);
+      margin:15px 0;
+    }
+
+    .desc{
+      color:var(--secondary);
+      line-height:1.8;
+      margin-bottom:25px;
+    }
+
+    .spec li{
+      list-style:none;
+      margin-bottom:10px;
+      color:#444;
+    }
+
+    .btn-group{
+      display:flex;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-top:30px;
+    }
+
+    .btn{
+      padding:14px 26px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:500;
+      color:#fff;
+      transition:.3s;
+    }
+
+    .btn-wa{ background:#111; }
+    .btn-ig{ background:#E1306C; }
+    .btn-mail{ background:#4285F4; }
+
+    .btn:hover{
+      opacity:.85;
+      transform:translateY(-2px);
+    }
+
+    @media(max-width:768px){
+      .product-box{
+        grid-template-columns:1fr;
+      }
+      .menu{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <div class="nav">
+    <div class="logo">
+      <a href="homefiks.html">Wijaya <span>Home Living</span></a>
+    </div>
+    <div class="menu">
+      <a href="homefiks.html">Home</a>
+      <a href="katalog2.html">Katalog</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak3.html">Kontak</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== DETAIL PRODUK ===== -->
+<section class="container">
+  <div class="product-box">
+
+    <div class="product-img">
+      <img src="img/meja rias 1.jpg" alt="Meja Rias Minimalis">
+    </div>
+
+    <div class="product-info">
+      <h1>Meja Rias Minimalis Modern</h1>
+      <div class="price">Rp 4.200.000</div>
+
+      <p class="desc">
+        Meja rias minimalis dengan desain modern dan elegan, dibuat dari kayu
+        berkualitas tinggi yang kokoh dan tahan lama. Dilengkapi dengan laci
+        penyimpanan luas untuk kosmetik dan aksesoris, cocok untuk mempercantik
+        kamar tidur dengan nuansa bersih dan mewah.
+      </p>
+
+      <ul class="spec">
+        <li>✔ Material: Kayu solid berkualitas</li>
+        <li>✔ Finishing: Natural doff</li>
+        <li>✔ Laci: 2 laci penyimpanan</li>
+        <li>✔ Cocok untuk kamar minimalis & modern</li>
+      </ul>
+
+      <div class="btn-group">
+        <a href="https://wa.me/+6285642037883" class="btn btn-wa">WhatsApp</a>
+        <a href="https://www.instagram.com/username_ig_kamu" class="btn btn-ig">Instagram</a>
+        <a href="mailto:emailkamu@gmail.com?subject=Pesan Meja Rias" class="btn btn-mail">Gmail</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

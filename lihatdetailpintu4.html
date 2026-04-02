@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Produk | Wijaya Home Living</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#1f2933;
+  --accent:#c89b3c;
+  --bg:#f2f4f7;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--bg);
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  background:#fff;
+  padding:18px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+  font-weight:600;
+  font-size:20px;
+  color:var(--primary);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#444;
+  font-size:14px;
+  transition:.3s;
+}
+
+nav ul li a:hover{
+  color:var(--accent);
+}
+
+/* ===== DETAIL PRODUK ===== */
+.section{
+  min-height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px 20px;
+}
+
+.detail-box{
+  background:#fff;
+  max-width:1100px;
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 25px 45px rgba(0,0,0,.12);
+  animation:fadeUp 1s ease;
+}
+
+.image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.6s;
+}
+
+.image-box:hover img{
+  transform:scale(1.08);
+}
+
+.content{
+  padding:50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.content h1{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.price{
+  font-size:22px;
+  color:var(--accent);
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.desc{
+  color:#555;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+/* ===== BUTTON ===== */
+.actions{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:14px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:14px;
+  transition:.4s;
+}
+
+.buy{
+  background:var(--primary);
+  color:#fff;
+}
+
+.buy:hover{
+  background:var(--accent);
+  transform:translateY(-4px);
+}
+
+.social{
+  border:1px solid var(--primary);
+  color:var(--primary);
+}
+
+.social:hover{
+  background:var(--primary);
+  color:#fff;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  nav{padding:18px 25px;}
+  .detail-box{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Wijaya Home Living</div>
+  <ul>
+    <li><a href="homefiks.html">Home</a></li>
+    <li><a href="katalog2.html">Katalog</a></li>
+    <li><a href="tentang.html">Tentang</a></li>
+    <li><a href="kontak3.html">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- DETAIL PRODUK -->
+<section class="section">
+  <div class="detail-box">
+
+    <div class="image-box">
+      <img src="img/pintu 4.jpg" alt="Tempat Tidur">
+    </div>
+
+    <div class="content">
+      <h1>Pintu Rumah Coklat</h1>
+      <div class="price">Rp 3.900.000</div>
+      <p class="desc">
+       Pintu rumah berwarna coklat dengan kayu jati yang kuat dan kokoh dengan desain minimalis dan menarik.
+      </p>
+
+      <ul class="spec">
+      <li>✔ Kayu solid berkualitas tinggi</li>
+      <li>✔ Pintu halus & engsel soft-close</li>
+      <li>✔ Ruang gantung + rak serbaguna</li>
+      <li>✔ Cocok untuk kamar modern & luxury</li>
+    </ul>
+
+      <div class="actions">
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/+6285642037883" class="btn buy">Pesan via WhatsApp</a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/irmaaa__w/?utm_source=ig_web_button_share_sheet" class="btn social">Instagram</a>
+
+       
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

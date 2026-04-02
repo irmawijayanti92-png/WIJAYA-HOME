@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meja Rias Premium | Wijaya Home Living</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --dark:#0f0f0f;
+      --gray:#888;
+      --accent:#bfa46f;
+      --bg:#ecebe7;
+      --white:#ffffff;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--dark);
+    }
+
+    /* ===== NAVBAR ===== */
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:rgba(255,255,255,.75);
+      backdrop-filter:blur(10px);
+      box-shadow:0 10px 30px rgba(0,0,0,.05);
+      z-index:1000;
+    }
+
+    .nav{
+      max-width:1300px;
+      margin:auto;
+      padding:18px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo a{
+      text-decoration:none;
+      font-size:22px;
+      font-weight:700;
+      color:var(--dark);
+      letter-spacing:1px;
+    }
+
+    .logo span{
+      color:var(--accent);
+    }
+
+    .menu a{
+      margin-left:32px;
+      text-decoration:none;
+      color:var(--dark);
+      font-weight:500;
+      position:relative;
+    }
+
+    .menu a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:var(--accent);
+      transition:.3s;
+    }
+
+    .menu a:hover::after{
+      width:100%;
+    }
+
+    /* ===== HERO PRODUK ===== */
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1.2fr 0.8fr;
+      align-items:center;
+      padding:120px 80px 80px;
+      gap:60px;
+    }
+
+    .hero-img{
+      position:relative;
+    }
+
+    .hero-img img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 40px 100px rgba(0,0,0,.25);
+    }
+
+    .badge{
+      position:absolute;
+      top:25px;
+      left:25px;
+      background:var(--accent);
+      color:#fff;
+      padding:8px 18px;
+      border-radius:50px;
+      font-size:13px;
+      font-weight:500;
+    }
+
+    .hero-info{
+      background:rgba(255,255,255,.55);
+      backdrop-filter:blur(14px);
+      padding:55px;
+      border-radius:30px;
+      box-shadow:0 30px 80px rgba(0,0,0,.15);
+    }
+
+    .hero-info h1{
+      font-size:42px;
+      line-height:1.2;
+      margin-bottom:18px;
+    }
+
+    .price{
+      font-size:30px;
+      color:var(--accent);
+      font-weight:600;
+      margin-bottom:22px;
+    }
+
+    .desc{
+      color:var(--gray);
+      line-height:1.9;
+      margin-bottom:30px;
+    }
+
+    .spec{
+      margin-bottom:35px;
+    }
+
+    .spec li{
+      list-style:none;
+      margin-bottom:12px;
+      font-size:15px;
+    }
+
+    .actions{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 32px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:500;
+      color:#fff;
+      transition:.3s;
+    }
+
+    .btn-wa{ background:#0f0f0f; }
+    .btn-ig{ background:#e1306c; }
+    .btn-mail{ background:#4a7bd4; }
+
+    .btn:hover{
+      transform:translateY(-4px);
+      opacity:.9;
+    }
+
+    @media(max-width:1000px){
+      .hero{
+        grid-template-columns:1fr;
+        padding:140px 30px 60px;
+      }
+      .menu{ display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <div class="nav">
+    <div class="logo">
+      <a href="home.html">Wijaya <span>Home Living</span></a>
+    </div>
+    <div class="menu">
+      <a href="homefiks.html">Home</a>
+      <a href="katalog2.html">Katalog</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak3.html">Kontak</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO DETAIL PRODUK ===== -->
+<section class="hero">
+
+  <div class="hero-img">
+    <span class="badge">Premium Series</span>
+    <img src="img/meja rias 3.jpg" alt="Meja Rias Premium">
+  </div>
+
+  <div class="hero-info">
+    <h1>Meja Rias Premium Modern</h1>
+    <div class="price">Rp 5.300.000</div>
+
+    <p class="desc">
+      Meja rias premium dengan desain modern showroom style, menghadirkan
+      kesan mewah dan bersih dalam satu tampilan. Dibuat dari material kayu
+      berkualitas tinggi dengan detail presisi, memberikan kenyamanan dan
+      keindahan untuk rutinitas harian Anda.
+    </p>
+
+    <ul class="spec">
+      <li>✔ Kayu solid pilihan & konstruksi kokoh</li>
+      <li>✔ Finishing halus anti kusam</li>
+      <li>✔ 3 laci besar + ruang kosmetik</li>
+      <li>✔ Cocok untuk kamar modern & luxury</li>
+    </ul>
+
+    <div class="actions">
+      <a href="https://wa.me/+6285642037883" class="btn btn-wa">WhatsApp</a>
+      <a href="https://www.instagram.com/irmaaa__w/?utm_source=ig_web_button_share_sheet" class="btn btn-ig">Instagram</a>
+     
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

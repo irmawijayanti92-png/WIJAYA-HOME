@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemari Premium | Wijaya Home Living</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --dark:#0d0d0d;
+      --soft:#777;
+      --accent:#d6b87c;
+      --bg:#f1eee8;
+      --white:#ffffff;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:
+        radial-gradient(circle at top right, #ffffff 0%, transparent 40%),
+        radial-gradient(circle at bottom left, #e7dfcf 0%, transparent 45%),
+        var(--bg);
+      color:var(--dark);
+      overflow-x:hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:rgba(255,255,255,.7);
+      backdrop-filter:blur(14px);
+      z-index:999;
+      border-bottom:1px solid rgba(0,0,0,.05);
+    }
+
+    .nav{
+      max-width:1400px;
+      margin:auto;
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo a{
+      text-decoration:none;
+      font-size:24px;
+      font-weight:700;
+      color:var(--dark);
+    }
+
+    .logo span{ color:var(--accent); }
+
+    .menu a{
+      margin-left:34px;
+      text-decoration:none;
+      color:var(--dark);
+      font-weight:500;
+      position:relative;
+    }
+
+    .menu a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-8px;
+      width:0;
+      height:2px;
+      background:var(--accent);
+      transition:.35s;
+    }
+
+    .menu a:hover::after{
+      width:100%;
+    }
+
+    /* ===== HERO ===== */
+    .hero{
+      min-height:100vh;
+      padding:150px 80px 80px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:90px;
+      align-items:center;
+    }
+
+    .hero-left{
+      position:relative;
+      opacity:0;
+      transform:translateX(-60px);
+      transition:1s ease;
+    }
+
+    .hero-left.show{
+      opacity:1;
+      transform:translateX(0);
+    }
+
+    .hero-left img{
+      width:100%;
+      border-radius:40px;
+      box-shadow:0 60px 140px rgba(0,0,0,.35);
+      transition:.6s;
+    }
+
+    .hero-left img:hover{
+      transform:scale(1.03);
+    }
+
+    .floating-tag{
+      position:absolute;
+      bottom:30px;
+      left:30px;
+      background:rgba(0,0,0,.75);
+      color:#fff;
+      padding:10px 22px;
+      border-radius:50px;
+      font-size:13px;
+      letter-spacing:1px;
+    }
+
+    .hero-right{
+      opacity:0;
+      transform:translateY(60px);
+      transition:1s ease .3s;
+    }
+
+    .hero-right.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .subtitle{
+      font-size:14px;
+      letter-spacing:4px;
+      color:var(--accent);
+      margin-bottom:18px;
+    }
+
+    .hero-right h1{
+      font-size:48px;
+      line-height:1.15;
+      margin-bottom:24px;
+    }
+
+    .price{
+      font-size:32px;
+      font-weight:600;
+      color:var(--accent);
+      margin-bottom:26px;
+    }
+
+    .desc{
+      color:var(--soft);
+      line-height:2;
+      margin-bottom:36px;
+      max-width:520px;
+    }
+
+    .spec{
+      margin-bottom:42px;
+    }
+
+    .spec li{
+      list-style:none;
+      margin-bottom:14px;
+    }
+
+    .actions{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:15px 36px;
+      border-radius:60px;
+      text-decoration:none;
+      font-weight:500;
+      color:#fff;
+      transition:.35s;
+    }
+
+    .btn-wa{ background:#0d0d0d; }
+    .btn-ig{ background:#e1306c; }
+    .btn-mail{ background:#4a7bd4; }
+
+    .btn:hover{
+      transform:translateY(-5px) scale(1.03);
+      opacity:.92;
+    }
+
+    @media(max-width:1000px){
+      .hero{
+        grid-template-columns:1fr;
+        padding:150px 30px 60px;
+      }
+      .menu{ display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="nav">
+    <div class="logo">
+      <a href="home.html">Wijaya <span>Home Living</span></a>
+    </div>
+    <div class="menu">
+      <a href="homefiks.html">Home</a>
+      <a href="katalog2.html">Katalog</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak3.html">Kontak</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO DETAIL PRODUK -->
+<section class="hero">
+
+  <div class="hero-left" id="imgBox">
+    <img src="img/pintu 3.jpg" alt="sofa ayunan">
+    <div class="floating-tag">WIJAYA HOME LIVING</div>
+  </div>
+
+  <div class="hero-right" id="infoBox">
+    <div class="subtitle">Wijaya Home Living</div>
+    <h1> Pintu Simple <br>Modern Elegance</h1>
+    <div class="price">Rp 2.500.000</div>
+
+    <p class="desc">
+      Dirancang dengan desain yang menarik dua pintu dengan warna hitam keabuan.
+
+    <ul class="spec">
+      <li>✔ Bahan berkualitas premium</li>
+      <li>✔ Bahan halus & soft</li>
+      <li>✔ Nyaman saat dipegang</li>
+      <li>✔ Cocok untuk  depan rumah</li>
+    </ul>
+
+    <div class="actions">
+      <a href="https://wa.me/+6285642037883" class="btn btn-wa">WhatsApp</a>
+      <a href="https://www.instagram.com/irmaaa__w/?utm_source=ig_web_button_share_sheet" class="btn btn-ig">Instagram</a>
+    
+    </div>
+  </div>
+
+</section>
+
+<!-- ANIMASI MASUK -->
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('imgBox').classList.add('show');
+    document.getElementById('infoBox').classList.add('show');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tentang | Wijaya Home Living</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+color:white;
+}
+
+/* BACKGROUND FOTO */
+.bg{
+background:url("img/WIJAYA\ HOME\ LIVING.png") center/cover no-repeat;
+min-height:100vh;
+position:relative;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+min-height:100vh;
+padding-bottom:50px;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+padding:25px 60px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+/* CONTENT */
+.container{
+max-width:900px;
+margin:60px auto;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:20px;
+
+opacity:0;
+transform:translateY(40px);
+animation:muncul 1.2s forwards;
+}
+
+@keyframes muncul{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+color:#eee;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg">
+<div class="overlay">
+
+<nav>
+<div><b>Wijaya Home Living</b></div>
+<div>
+<a href="homefiks.html">Home</a>
+<a href="katalog2.html">Katalog</a>
+<a href="tentang.html">Tentang</a>
+<a href="kontak3.html">Kontak</a>
+</div>
+</nav>
+
+<div class="container">
+
+<h1>Tentang Kami</h1>
+<p>
+Wijaya Home Living adalah toko furniture yang menyediakan berbagai kebutuhan rumah seperti tempat tidur, lemari, meja rias dan produk lainnya dengan desain modern dan kualitas terbaik.
+Kami hadir untuk membantu menciptakan rumah yang nyaman, elegan, dan berkelas.
+</p>
+
+<br>
+
+<p>
+Visi kami menjadi toko furniture terpercaya, dengan pelayanan ramah dan produk berkualitas tinggi.
+</p>
+
+<div class="grid">
+<div class="card">Bahan Premium</div>
+<div class="card">Desain Modern</div>
+<div class="card">Bisa Custom</div>
+<div class="card">Pengerjaan Rapi</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
